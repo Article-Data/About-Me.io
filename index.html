@@ -1,64 +1,136 @@
 <html>
-
-<title> About Me </title>
-
-<body style="background-color:PeachPuff;">
-
-<h1 style="color:Black; font-size:70px; text-align:center;"> <u> About Me </u> </h1>
-
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-	}
-	
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.content-footer {
+  margin: 50px 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #73A8C2;
+  text-decoration: none;
+}
+.social > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.content-footer > p {
+  color: #F7EDE1;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #F1C863;
+}
+  
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
 </style>
+</head>
+<body>
 
-<img src="Sami.JPG" alt="Trulli" class="center" width="700" height="700">
+<div class="about-section">
+  <h1>About Me</h1>
+  <p> <b><i> I reside in Charlotte, North Carolina. I was planning to create my own website
+	from a very long time. <br> Finally i was successful in creating one! <br> I promise to provide y'all with the best topics!</i> <br><br>
+	You can request a specific topic if you want to and i can add it to my list. </b></p>
+</div>
 
+<div class="row">
 
-<p style="color:Black; font-size: 30px;"> <b><i>Myself Mohammad Sami. I reside in Charlotte, North Carolina. I was planning to create my own website
-	from a very long time. Finally i was successful in creating one! <br> Please support me guys as this is the start and i promise to provide y'all with the best! <br>
-	You can request a specific topic if you want to and i can add it to my list. </b></i></p><br>
-	
-
-<p style="color:Black; font-size:30px; text-align:center;">	I was born in Hyderabad, India. Grew up in Mumbai and spent my 18 years dividing time between these two cities!
-I migrated with my family to Charlotte, USA in 2018. <br>
-I love to play Cricket, Go on Adventures and Sleep. 
-Keep supporting me and share my website to everyone!
-</p> <br><br>
-
-<p style="color:Black; font-size: 30px;">
-<b>You can follow me on below Social Media</b> (Please click on them!) </p>
-
-<img src="Insta.jpg" alt="Instagram" width="100" height="100">
-
-<p style="color:Red; font size:50px; text-align:center"> <a href="https://www.instagram.com/badshah_akbar"> Instagram </a> </p> <br><br>
-
-
-<img src="Facebook.jpg" alt="Instagram" width="100" height="100">
-
-<p style="color:Red; font size:50px; text-align:center"> <a href="https://www.facebook.com/sami.mohiuddin.37"> Facebook </a> </p> <br><br>
-
-
-<img src="Snapchat.jpg" alt="Instagram" width="100" height="100">
-
-<p style="color:Black; font-size: 40px; text-align: center;"> <b> Badshah_Akbar <b></p> <br>
-
-<p style="color:Black; font-size: 30px;"> Thank you!!! </p>
-
-
-<h2 style="color:Black; font-size:50px; text-align:left;"> <u>With</u> <u>lots</u> <u>of</u> <u>love</u> <u>and</u> <u>hugs</u></h2>
-<p style="color:Black; font-size:50px; text-align:center;"> - SAMI </p>
-
-
-
-
+  <div class="column; text-align: center;">
+    <div class="card; text-align: center;">
+      <img src="Sami.jpg" alt="Mohammad Sami" style="width:100%" class="center">
+      <div class="container">
+        <h2 style="text-align:center;">Mohammad Sami</h2>
+        <p class="title"><b>Vice President - Global Technology and Operations </b> <br>
+		                 Programmer | Cricketer | Writer </p><br>
+        <p style="text-align: center;"> <b>My mission is to empower every student and every organization on this planet to achieve more! </b></p>
+        
+		
+		<footer class="content-footer">
+    <p>Say hi to me on these social networks:</p>
+    <ul class="social">
+        <li><a class="css-is-deranged" href="https://www.instagram.com/badshah_akbar"> Instagram</a></li>
+        <li><a class="css-is-deranged" href="https://www.facebook.com/sami.mohiuddin.37"> Facebook </a></li>
+        <li><a class="css-is-deranged" href="null">Snapchat: Badshah Akbar</a></li>
+    </ul>
+  
+</footer>
+		
+      </div>
+    </div>
+  </div>
+  
+</div>
 
 </body>
 </html>
